@@ -1,7 +1,8 @@
 # 🧩 DevSecOps Pipeline Project: Tic-Tac-Toe Game
 
 ## 🏗️ Architecture
-![DevSecOps Pipeline Overview](devsecops%208.png)
+<img width="1755" height="634" alt="image" src="https://github.com/user-attachments/assets/fd081eba-bed7-4062-b90c-bd22552ab2f5" />
+
 
 This project demonstrates a complete **DevSecOps pipeline** built for a containerized **Tic-Tac-Toe web application**.  
 It integrates continuous integration, security scanning, infrastructure automation, and GitOps deployment — ensuring a secure, automated, and observable delivery workflow.
