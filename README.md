@@ -1,90 +1,53 @@
-# DevSecOps Pipeline Implementation for Tic Tac Toe Game
+# 🧩 DevSecOps Pipeline for Tic Tac Toe Game
 
-![Screenshot 2025-03-04 at 7 16 48 PM](https://github.com/user-attachments/assets/7ed79f9c-9144-4870-accd-500085a15592)
+A fully automated **DevSecOps CI/CD pipeline** for a containerized **Tic Tac Toe web application**, designed to demonstrate modern DevOps practices — including **continuous integration**, **security scanning**, **container orchestration**, and **continuous deployment** to a **Kubernetes cluster** on **AWS EC2**.
 
-![image](https://github.com/user-attachments/assets/5b2813a5-f493-4665-8964-77359b5be93a)
+This project integrates the complete DevSecOps toolchain, ensuring every stage of the application lifecycle — from code to deployment — is secure, automated, and observable.
 
-## Features
+---
 
-- 🎮 Fully functional Tic Tac Toe game
-- 📊 Score tracking for X, O, and draws
-- 📜 Game history with timestamps
-- 🏆 Highlights winning combinations
-- 🔄 Reset game and statistics
-- 📱 Responsive design for all devices
+## 🚀 Project Overview
 
-## Technologies Used
+The goal of this project is to automate the process of:
+1. **Building** the Tic Tac Toe web app using GitHub Actions.
+2. **Containerizing** the app with Docker.
+3. **Scanning** for vulnerabilities using Trivy.
+4. **Pushing** the verified image to GitHub Container Registry (GHCR).
+5. **Deploying** the image automatically using Argo CD into a Kubernetes cluster hosted on AWS EC2.
 
-- React 18
-- TypeScript
-- Tailwind CSS
-- Lucide React for icons
+---
 
-## Project Structure
+## 🧱 Tech Stack
 
-```
-src/
-├── components/
-│   ├── Board.tsx       # Game board component
-│   ├── Square.tsx      # Individual square component
-│   ├── ScoreBoard.tsx  # Score tracking component
-│   └── GameHistory.tsx # Game history component
-├── utils/
-│   └── gameLogic.ts    # Game logic utilities
-├── App.tsx             # Main application component
-└── main.tsx           # Entry point
-```
+| Layer | Tool / Service | Purpose |
+|-------|----------------|----------|
+| **Application** | React.js | Frontend Tic Tac Toe Game |
+| **Version Control** | Git & GitHub | Source Code Management |
+| **CI/CD** | GitHub Actions | Automate Build, Test & Deploy |
+| **Containerization** | Docker | Build and run application in isolated environment |
+| **Security Scanning** | Trivy | Detect vulnerabilities in Docker images |
+| **Orchestration** | Kubernetes (k8s) | Manage containerized applications |
+| **Deployment** | Argo CD | GitOps-based Continuous Deployment |
+| **Cloud Infrastructure** | AWS EC2 | Host Kubernetes cluster |
+| **Monitoring (optional)** | Prometheus / Grafana | Observe cluster and application metrics |
 
-## Game Logic
+---
 
-The game implements the following rules:
+## 🔄 Pipeline Architecture
 
-1. X goes first, followed by O
-2. The first player to get 3 of their marks in a row (horizontally, vertically, or diagonally) wins
-3. If all 9 squares are filled and no player has 3 marks in a row, the game is a draw
-4. Winning combinations are highlighted
-5. Game statistics are tracked and displayed
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/devsecops-demo.git
-   cd devsecops-demo
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-4. Open your browser and navigate to `http://localhost:5173`
-
-## Building for Production
-
-To create a production build:
-
-```bash
-npm run build
-# or
-yarn build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
+```text
+ Developer Commit
+       ↓
+  GitHub Actions
+       ↓
+   Docker Build
+       ↓
+  Trivy Security Scan
+       ↓
+ GitHub Container Registry (GHCR)
+       ↓
+  Argo CD (GitOps)
+       ↓
+ Kubernetes Cluster (AWS EC2)
+       ↓
+   Deployed Tic Tac Toe App
