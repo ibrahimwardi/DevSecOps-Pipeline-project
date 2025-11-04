@@ -5,7 +5,7 @@
 
 
 This project demonstrates a complete **DevSecOps pipeline** built for a containerized **Tic-Tac-Toe web application**.  
-It integrates continuous integration, security scanning, infrastructure automation, and GitOps deployment — ensuring a secure, automated, and observable delivery workflow.
+It integrates continuous integration, security scanning, infrastructure automation, and GitOps deployment  ensuring a secure, automated, and observable delivery workflow.
 
 ---
 
@@ -105,7 +105,7 @@ This pipeline automates:
 
 ## 🧾 Project Summary
 
-This **DevSecOps Pipeline Project** demonstrates end-to-end automation — from code commit to production deployment — with security baked in at every step.  
+This **DevSecOps Pipeline Project** demonstrates end-to-end automation, from code commit to production deployment with security baked in at every step.  
 
 By combining **GitHub**, **Docker**, **Terraform**, **Trivy**, and **ArgoCD**, the pipeline ensures:  
 ✅ Reliable CI/CD automation  
