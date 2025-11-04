@@ -72,8 +72,9 @@ This pipeline automates:
 - Kubectl commands validate pod status, services, and ArgoCD sync health.  
 
 ### 6️⃣ Monitoring & Continuous Management
-<img width="1918" height="1020" alt="devsecops 8" src="https://github.com/user-attachments/assets/2ae136ef-4c52-43a2-a5e2-165052be8276" />
 
+
+<img width="1191" height="397" alt="argocd" src="https://github.com/user-attachments/assets/52482385-4f1d-4903-b142-559c91519e48" />
 
 - ArgoCD dashboard provides clear visibility into the running applications.  
 - Enables rollback, re-deployment, and sync checks.  
@@ -92,7 +93,7 @@ This pipeline automates:
 ## 📊 Results & Observations
 
 
-<img width="1919" height="1078" alt="devsecops 5 good" src="https://github.com/user-attachments/assets/2dba9a8b-2331-4a0f-b1bf-f2607bce1f0d" />
+<img width="1845" height="896" alt="devsecops 5 good" src="https://github.com/user-attachments/assets/e35ed42a-57bc-4627-8296-4239270efbcb" />
 
 - Fully automated CI/CD pipeline integrating security at every stage.  
 - GitOps-based delivery ensures consistent and auditable deployments.  
