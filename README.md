@@ -1,11 +1,10 @@
 # 🧩 DevSecOps Pipeline Project: Tic-Tac-Toe Game
 
 ## 🏗️ Architecture
-<img width="1755" height="634" alt="image" src="https://github.com/user-attachments/assets/97f63ede-91a6-4375-a941-6242c72f4f13" />
-
+![DevSecOps Pipeline Overview](devsecops%208.png)
 
 This project demonstrates a complete **DevSecOps pipeline** built for a containerized **Tic-Tac-Toe web application**.  
-It integrates continuous integration, security scanning, infrastructure automation, and GitOps deployment ensuring a secure, automated, and observable delivery workflow.
+It integrates continuous integration, security scanning, infrastructure automation, and GitOps deployment — ensuring a secure, automated, and observable delivery workflow.
 
 ---
 
@@ -26,7 +25,8 @@ It integrates continuous integration, security scanning, infrastructure automati
 ---
 
 ## ⚙️ Pipeline Overview
-![Pipeline Flow](devsecops%205%20good.png)
+
+<img width="1846" height="794" alt="DevSecOps 1" src="https://github.com/user-attachments/assets/3f987f82-ebeb-406b-90c3-6ea32bb3f3ad" />
 
 This pipeline automates:
 1. **Code Commit & Build** – Source changes trigger Docker image builds.  
@@ -39,7 +39,6 @@ This pipeline automates:
 ## 🚀 Implementation Workflow
 
 ### 1️⃣ Source & Build Stage
-![Build Process](1a14b784-4144-416c-b94a-28bf37d6983a.png)
 
 - Developers push code to GitHub.
 - CI pipeline automatically builds a Docker image.
@@ -51,27 +50,30 @@ This pipeline automates:
 - Pipeline fails automatically if critical vulnerabilities are found.
 
 ### 3️⃣ Deployment with ArgoCD
-![ArgoCD Dashboard](argocd.png)
+
+<img width="1191" height="397" alt="argocd" src="https://github.com/user-attachments/assets/4fead8f6-47d2-4814-a231-38ed25ace8ad" />
 
 - ArgoCD continuously monitors the GitHub repository.  
 - When a new image is pushed, it automatically syncs the updated manifest to Kubernetes.  
 - Provides real-time visualization of deployments and app status.
 
 ### 4️⃣ Infrastructure Provisioning
-![EC2 Infrastructure](ec2%20instance.png)
+
+<img width="1857" height="909" alt="ec2 instance" src="https://github.com/user-attachments/assets/be322346-aa59-435e-8019-9aeb1fee4f8c" />
 
 - The entire Kubernetes cluster and supporting infrastructure are provisioned using **Terraform**.  
 - Terraform manages the EC2 instance setup, networking, and IAM configurations.  
 
 ### 5️⃣ Cluster & Application Status
-![Cluster Operations](10f9406b-9174-4156-af8c-3b2ed5557968.png)
+<img width="1918" height="1020" alt="devsecops 8" src="https://github.com/user-attachments/assets/3f4123f2-c69b-478a-8319-28cec0be60ab" />
+
 
 - After deployment, the app runs inside the Kubernetes cluster.  
 - Kubectl commands validate pod status, services, and ArgoCD sync health.  
 
 ### 6️⃣ Monitoring & Continuous Management
-![ArgoCD Monitoring 1](37a5578f-1265-461e-99ba-7473b20b321c.png)  
-![ArgoCD Monitoring 2](824ae39a-5aea-4177-bf47-afee8a2256ba.png)
+<img width="1918" height="1020" alt="devsecops 8" src="https://github.com/user-attachments/assets/2ae136ef-4c52-43a2-a5e2-165052be8276" />
+
 
 - ArgoCD dashboard provides clear visibility into the running applications.  
 - Enables rollback, re-deployment, and sync checks.  
@@ -88,6 +90,9 @@ This pipeline automates:
 ---
 
 ## 📊 Results & Observations
+
+
+<img width="1919" height="1078" alt="devsecops 5 good" src="https://github.com/user-attachments/assets/2dba9a8b-2331-4a0f-b1bf-f2607bce1f0d" />
 
 - Fully automated CI/CD pipeline integrating security at every stage.  
 - GitOps-based delivery ensures consistent and auditable deployments.  
@@ -110,8 +115,7 @@ This approach embodies the true **DevSecOps culture**, bridging the gap between 
 
 ---
 
-
+### 👨‍💻 Author
 **Ibrahim Wardi**  
 📧 *ibrahimwardi233@gmail.com*  
 📦 [GitHub Repository](https://github.com/ibrahimwardi/DevSecOps-Pipeline-project)
-
